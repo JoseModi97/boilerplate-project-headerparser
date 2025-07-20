@@ -6,41 +6,32 @@
     <link rel="shortcut icon" href="https://cdn.hyperdev.com/us-east-1%3A52a203ff-088b-420f-81be-45bf559d01b1%2Ffavicon.ico"
         type="image/x-icon" />
     <link href="/public/style.css" rel="stylesheet" type="text/css">
-    <link rel="stylesheet" href="https://static2.sharepointonline.com/files/fabric/office-ui-fabric-core/11.0.0/css/fabric.min.css" />
 </head>
 
-<body class="ms-Fabric" dir="ltr">
-    <div class="ms-Grid" dir="ltr">
-        <div class="ms-Grid-row">
-            <div class="ms-Grid-col ms-sm12 ms-md12 ms-lg12">
-                <h1 class="ms-font-su">Request Header Parser Microservice</h1>
-            </div>
-        </div>
-        <div class="ms-Grid-row">
-            <div class="ms-Grid-col ms-sm12 ms-md12 ms-lg12">
-                <h2 class="ms-font-xxl">Example Usage:</h2>
-                <p class="ms-font-xl">
-                    <a href="api/whoami">[base url]/api/whoami</a>
-                </p>
-                <button class="ms-Button ms-Button--colorful">
-                  <span class="ms-Button-label">Who Am I?</span>
-                </button>
-            </div>
-        </div>
-        <div class="ms-Grid-row">
-            <div class="ms-Grid-col ms-sm12 ms-md12 ms-lg12">
-                <h2 class="ms-font-xxl">Example Output:</h2>
-                <p class="ms-font-xl">
-                    <code>{"ipaddress":"::ffff:159.20.14.100","language":"en-US,en;q=0.5",<br>"software":"Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:50.0) Gecko/20100101 Firefox/50.0"}</code>
-                </p>
-            </div>
-        </div>
+<body>
+    <div class="container">
+        <h1>Request Header Parser Microservice</h1>
+        <h2>Example Usage:</h2>
+        <p>
+            <a href="api/whoami">[base url]/api/whoami</a>
+        </p>
+        <button id="whoami-btn">Who Am I?</button>
+        <h2>Example Output:</h2>
+        <p>
+            <code>{"ipaddress":"::ffff:159.20.14.100","language":"en-US,en;q=0.5",<br>"software":"Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:50.0) Gecko/20100101 Firefox/50.0"}</code>
+        </p>
     </div>
     <div class="footer">
         <p>
             by <a href="https://www.freecodecamp.org">freeCodeCamp</a>
         </p>
     </div>
+    <script>
+      const whoamiBtn = document.getElementById('whoami-btn');
+      whoamiBtn.addEventListener('click', () => {
+        window.location.href = 'api/whoami';
+      });
+    </script>
 </body>
 
 </html>

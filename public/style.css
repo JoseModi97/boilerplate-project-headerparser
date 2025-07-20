@@ -1,31 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Segoe+UI+Variable:wght@400;700&display=swap');
+
 body {
-    font-family: 'Segoe UI', 'Segoe UI Web (West European)', 'Segoe UI', -apple-system, BlinkMacSystemFont, 'Roboto', 'Helvetica Neue', sans-serif;
+    font-family: 'Segoe UI Variable', sans-serif;
     font-size: 16px;
-    color: #333;
-    background-color: #fff;
+    color: #fff;
+    background-color: #1a1a1a;
     text-align: center;
     line-height: 1.5;
+    overflow: hidden;
 }
 
-.ms-Grid {
-    padding: 0 20px;
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 40px 20px;
+    background-color: rgba(43, 43, 43, 0.8);
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+h2 {
+    font-size: 1.5rem;
+    font-weight: 700;
     margin-top: 40px;
-}
-
-.footer {
-    margin-top: 40px;
-}
-
-code {
-    font-family: 'Consolas', 'Courier New', monospace;
-    padding: 2px 5px;
-    color: #e01a78;
-    background-color: #f3f3f3;
-    border-radius: 3px;
+    margin-bottom: 10px;
 }
 
 a {
-    color: #0078d4;
+    color: #00a2ff;
     text-decoration: none;
 }
 
@@ -33,38 +43,35 @@ a:hover {
     text-decoration: underline;
 }
 
-.ms-Button--primary {
-    background-color: #0078d4;
-    border-color: #0078d4;
+button {
+    background-color: #00a2ff;
     color: #fff;
-}
-
-.ms-Button--primary:hover {
-    background-color: #005a9e;
-    border-color: #005a9e;
-    color: #fff;
-}
-
-.ms-Button--primary:active {
-    background-color: #004578;
-    border-color: #004578;
-    color: #fff;
-}
-
-.ms-Button--colorful {
-    background: linear-gradient(45deg, #ff6b6b, #f06595, #cc5de8, #845ef7, #5c7cfa, #339af0, #22b8cf, #20c997);
     border: none;
-    color: #fff;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    transition: transform 0.2s ease-in-out;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-weight: 700;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out;
 }
 
-.ms-Button--colorful:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
+button:hover {
+    background-color: #007acc;
 }
 
-.ms-Button--colorful:active {
-    transform: translateY(0);
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+code {
+    font-family: 'Consolas', 'Courier New', monospace;
+    padding: 2px 5px;
+    color: #e01a78;
+    background-color: #333;
+    border-radius: 3px;
+}
+
+.footer {
+    margin-top: 40px;
+    font-size: 0.8rem;
+}
+
+.footer a {
+    color: #00a2ff;
 }
